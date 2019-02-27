@@ -1,9 +1,5 @@
-import com.barran.algorithm.matchstr.KMPMatcher;
 import com.barran.algorithm.matchstr.SundayMatcher;
-import com.barran.algorithm.sort.CountSort;
-import com.barran.algorithm.sort.QuickSort;
-import com.barran.algorithm.sort.SelectSort;
-import com.barran.algorithm.sort.ShellSort;
+import com.barran.algorithm.sort.*;
 
 import java.util.Arrays;
 
@@ -21,7 +17,7 @@ public class Main {
 //        new CountSort().sort(array);
 //        new SelectSort().sort(array);
 //        new ShellSort().sort(array);
-        new QuickSort().sort(array);
+        new NonRecursiveQuickSort().sort(array);
 
         System.out.println(Arrays.toString(array));
     }
